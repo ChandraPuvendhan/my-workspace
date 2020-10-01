@@ -365,4 +365,75 @@ Unpacking patch (2.7.6-6) ...
 7[46;0f[42m[30mProgress: [ 93%][49m[39m [################################################################################################################################..........] 8Setting up libgssapi3-heimdal:amd64 (7.7.0+dfsg-1ubuntu1) ...
 7[46;0f[42m[30mProgress: [ 94%][49m[39m [##################################################################################################################################........] 87[46;0f[42m[30mProgress: [ 95%][49m[39m [###################################################################################################################################.......] 8Setting up libldap-2.4-2:amd64 (2.4.49+dfsg-2ubuntu1.3) ...
 7[46;0f[42m[30mProgress: [ 97%][49m[39m [#####################################################################################################################################.....] 8Setting up libcurl3-gnutls:amd64 (7.68.0-1ubuntu2.2) ...
-7[46;0f[42m[30mProgress: [ 97%][49m[39m [######################################################################################################################################....] 8Setting up git (1:2.25.
+7[46;0f[42m[30mProgress: [ 97%][49m[39m [######################################################################################################################################....] 8Setting up git (1:2.25.1-1ubuntu3) ...
+7[46;0f[42m[30mProgress: [ 99%][49m[39m [########################################################################################################################################..] 87[46;0f[42m[30mProgress: [ 99%][49m[39m [#########################################################################################################################################.] 8Processing triggers for libc-bin (2.31-0ubuntu9.1) ...
+Processing triggers for mime-support (3.64ubuntu1) ...
+
+7[0;46r8[1A[J# git -version
+unknown option: -version
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+# git --version
+git version 2.25.1
+# git init    config --global user.email "mailtochandrasankar@gmail.com"
+# git config --global user.name "ChandraPuvendhan"
+# git init
+Initialized empty Git repository in /javaworkspace/.git/
+# git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mHello.class[m
+	[31mHello.java[m
+	[31mJavaDay1.log[m
+	[31mWelcome.class[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+# git add */*  .*
+# git ci ommit -m "first commit"
+[master (root-commit) f249488] first commit
+ 4 files changed, 378 insertions(+)
+ create mode 100644 Hello.class
+ create mode 100644 Hello.java
+ create mode 100644 JavaDay1.log
+ create mode 100644 Welcome.class
+# git remote add origin "https://github.com/ChandraPuvendhan/my-workspace.git"
+# git push -u origin master
+Username for 'https://github.com': ChandraPuvendhan
+Password for 'https://ChandraPuvendhan@github.com': 
+To https://github.com/ChandraPuvendhan/my-workspace.git
+ [31m! [rejected]       [m master -> master (fetch first)
+[31merror: failed to push some refs to 'https://github.com/ChandraPuvendhan/my-workspace.git'
+[m[33mhint: Updates were rejected because the remote contains work that you do[m
+[33mhint: not have locally. This is usually caused by another repository pushing[m
+[33mhint: to the same ref. You may want to first integrate the remote changes[m
+[33mhint: (e.g., 'git pull ...') before pushing again.[m
+[33mhint: See the 'Note about fast-forwards' in 'git push --help' for details.[m
+# git branch -M main
+# git remote add origin https://github.com/ChandraPuvendhan/ChandraSankarLinuxWorkspace.git
+fatal: remote origin already exists.
+# git push -u origin main
+Username for 'https://github.com': ChandraPuvendhan
+Password for 'https://ChandraPuvendhan@github.com': 
+Enumerating objects: 6, done.
+Counting objects:  16% (1/6)Counting objects:  33% (2/6)Counting objects:  50% (3/6)Counting objects:  66% (4/6)Counting objects:  83% (5/6)Counting objects: 100% (6/6)Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects:  16% (1/6)Compressing objects:  33% (2/6)Compressing objects:  50% (3/6)Compressing objects:  66% (4/6)Compressing objects:  83% (5/6)Compressing objects: 100% (6/6)Compressing objects: 100% (6/6), done.
+Writing objects:  16% (1/6)Writing objects:  33% (2/6)Writing objects:  50% (3/6)Writing objects:  66% (4/6)Writing objects:  83% (5/6)Writing objects: 100% (6/6)Writing objects: 100% (6/6), 9.11 KiB | 848.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), done.[K
+remote: 
+remote: Create a pull request for 'main' on GitHub by visiting:[K
+remote:      https://github.com/ChandraPuvendhan/my-workspace/pull/new/main[K
+remote: 
+To https://github.com/ChandraPuvendhan/my-workspace.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+# git log
+[?1h=[33mcom
